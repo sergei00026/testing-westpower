@@ -1,7 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;
-
-400;700&family=Roboto:wght@300;700&display=swap);
 @charset "UTF-8";
+
 * {
   padding: 0px;
   margin: 0px;
@@ -360,8 +358,41 @@ h6 {
 }
 
 .form__label {
-  display: block;
+  display: inline-block;
   margin-bottom: 7px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 160%;
+  /* 160% */
+}
+
+.form__decor {
+  margin-left: 16px;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 184.615%;
+  /* 184.615% */
+  text-transform: lowercase;
+  position: relative;
+}
+
+.form__decor::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: #ffb911;
+  z-index: -1;
 }
 
 .contact-base {
